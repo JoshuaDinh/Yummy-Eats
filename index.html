@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- js div -->
+    <div class="overlay" id="overlay">
+        <h3>Searching Now</h3>
+    </div>
+
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">yummy.eats</a>
+            </header>
+            <h1><span>The Healthy</span>Eating Experience</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque doloribus vitae tempore perspiciatis pariatur illo a odio nulla placeat esse quae atque distinctio sit, laboriosam aspernatur nemo repudiandae non consequatur!</p>
+                <div class="form-container">
+                    <form action="#">
+                        <div class="form-left">
+                            <label for="">Enter your city </label>
+                            <input type="text" name="city" id="city">
+                            <p>Example: "San Diego</p>
+                        </div>
+                        <input type='button' id="cta-btn" value="Find Food Now">
+                    </form>
+                </div>
+        </section>
+    </div>
+        <section class="authentic">
+            <div class="right-col">
+                <h2>Authentic & Awesome</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat porro et adipisci perferendis reprehenderit maxime veniam repudiandae possimus distinctio, aperiam sint minus ipsa, culpa obcaecati officia dicta, quos nulla aliquam.</p>
+            </div>
+            <div class="left-col">
+                <img src="./img/food.jpeg" alt="left-col">
+            </div>
+        </section>
+
+        <script>
+          let btn =  document.querySelector('#cta-btn')
+          let overlay =  document.querySelector('#overlay')
+        
+          btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay');
+          })
+
+
+        </script>
+</body>
+</html>
